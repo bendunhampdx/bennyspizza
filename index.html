@@ -14,89 +14,66 @@
     <h1>Welcome to Benny's Pizza</h1>
     <p id="tagline">Rated best pizza on Earth by <em>The Intergalactic Times</em></p>
     <h3>Pick your size</h3>
-    <div id="size">
-      <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="small">
-      <label class="form-check-label" for="small">Small 8"</label>
-      </div>
-      <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="medium">
-      <label class="form-check-label" for="medium">Medium 12"</label>
-      </div>
-      <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="large">
-      <label class="form-check-label" for="large">Large 16"</label>
-      </div>
-  </div>
-    <h3>Pick your toppings</h3>
-    <h5>Sauce</h5>
-    <div id="sauce">
-      <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="red">
-      <label class="form-check-label" for="red">Red Sauce</label>
-      </div>
-      <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="bbq">
-      <label class="form-check-label" for="bbq">BBQ</label>
-      </div>
-      <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="olive">
-      <label class="form-check-label" for="olive">Olive Oil</label>
-      </div>
-  </div>
-    <h5>Cheesey Gooey Goodness</h5>
-    <div id="cheese">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="mozz">
-        <label class="form-check-label" for="mozz">Mozzarella</label>
-      </div>
+    <form id="order">
+      <div id="size">
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="freshMozz">
-        <label class="form-check-label" for="freshMozz">Fresh Mozzarella</label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="small">
+          <label class="form-check-label" for="small">Small 8"</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="medium">
+          <label class="form-check-label" for="medium">Medium 12"</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="large">
+          <label class="form-check-label" for="large">Large 16"</label>
+        </div>
       </div>
-  </div>
-    <h5>Veggies For a Balanced Pie</h5>
-    <div id="veggies">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="redOnion">
-        <label class="form-check-label" for="redOnion">Red Onion</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="spinach">
-        <label class="form-check-label" for="spinach">Spinach</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="peppers">
-        <label class="form-check-label" for="peppers">Red & Green Peppers</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="broccoli">
-        <label class="form-check-label" for="broccoli">Broccoli</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="mushroom">
-        <label class="form-check-label" for="mushroom">Mushrooms</label>
-      </div>
-  </div>
-    <h5>Meats Of The Savory Variety</h5>
-    <div id="meat">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="veganSausage">
-        <label class="form-check-label" for="veganSausage">Vegan Sausage</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="pepperoni">
-        <label class="form-check-label" for="pepperoni">Pepperoni</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="chicken">
-        <label class="form-check-label" for="chicken">Chicken</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="sausage">
-        <label class="form-check-label" for="sausage">Sausage</label>
-      </div>
+      <h3>Pick your toppings</h3>
+      
+      <h5>Veggies For a Balanced Pie</h5>
+      <div id="veggies">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="redOnion">
+          <label class="form-check-label" for="redOnion">Red Onion</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="spinach">
+          <label class="form-check-label" for="spinach">Spinach</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="peppers">
+          <label class="form-check-label" for="peppers">Red & Green Peppers</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="broccoli">
+          <label class="form-check-label" for="broccoli">Broccoli</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="mushroom">
+          <label class="form-check-label" for="mushroom">Mushrooms</label>
+        </div>
     </div>
+      <h5>Meats Of The Savory Variety</h5>
+      <div id="meat">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="veganSausage">
+          <label class="form-check-label" for="veganSausage">Vegan Sausage</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="pepperoni">
+          <label class="form-check-label" for="pepperoni">Pepperoni</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="chicken">
+          <label class="form-check-label" for="chicken">Chicken</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="sausage">
+          <label class="form-check-label" for="sausage">Sausage</label>
+        </div>
+      </div>
+  </form>
     <button type="submit">Click to get your price!</button>
     <div id="price"></div>
   </div>
