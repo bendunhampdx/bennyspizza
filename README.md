@@ -30,3 +30,9 @@ Code:
     this.price += 2
 Expected Outcome:2
 
+Test:when user selects a meat 3 is added to price
+Code:
+   if(pizzaMeat === "veganSaussage") {
+    this.price += 3
+Expected Outcome:3
+

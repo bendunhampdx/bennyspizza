@@ -14,67 +14,46 @@
     <h1>Welcome to Benny's Pizza</h1>
     <p id="tagline">Rated best pizza on Earth by <em>The Intergalactic Times</em></p>
     <h3>Pick your size</h3>
-    <form id="order">
-      <div id="size">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" value="15" id="small">
-          <label class="form-check-label" for="small">Small 8"</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" value="20" id="medium">
-          <label class="form-check-label" for="medium">Medium 12"</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" value="25" id="large">
-          <label class="form-check-label" for="large">Large 16"</label>
-        </div>
+    <form id="pizzaOrder">
+      <div class="formGroup">
+        <select id="size" aria-label="size">
+          <option selected>Choose Your Size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
       </div>
+      
       <h3>Pick your toppings</h3>
       
       <h5>Veggies For a Balanced Pie</h5>
-      <div id="veggies">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="redOnion">
-          <label class="form-check-label" for="redOnion">Red Onion</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="spinach">
-          <label class="form-check-label" for="spinach">Spinach</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="peppers">
-          <label class="form-check-label" for="peppers">Red & Green Peppers</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="broccoli">
-          <label class="form-check-label" for="broccoli">Broccoli</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="mushroom">
-          <label class="form-check-label" for="mushroom">Mushrooms</label>
-        </div>
-    </div>
-      <h5>Meats Of The Savory Variety</h5>
-      <div id="meat">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="veganSausage">
-          <label class="form-check-label" for="veganSausage">Vegan Sausage</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="pepperoni">
-          <label class="form-check-label" for="pepperoni">Pepperoni</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="chicken">
-          <label class="form-check-label" for="chicken">Chicken</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="2" id="sausage">
-          <label class="form-check-label" for="sausage">Sausage</label>
+      <div class="veggies">
+        <div class="formGroup">
+          <select id="veggies" aria-label="veggies">
+            <option selected>Choose Your Veggies</option>
+            <option value="redOnion">Red Onion</option>
+            <option value="spinach">Spinach</option>
+            <option value="peppers">Peppers</option>
+            <option value="broccoli">Broccoli</option>
+            <option value="mushroom">mushroom</option>
+          </select>
         </div>
       </div>
-  </form>
+      <h5>Meats Of The Savory Variety</h5>
+      <div class="meat">
+        <div class="formGroup">
+        <select id="meat" aria-label="meat">
+          <option selected>Choose Your Meat</option>
+          <option value="veganSausage">Vegan Sausage</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="chicken">Chicken</option>
+          <option value="sausage">Sausage</option>
+        </select>
+      </div>
+    </div>
     <button type="submit">Click to get your price!</button>
+    </form>
+    
     <div id="price"></div>
   </div>
 </body>
