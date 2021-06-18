@@ -24,3 +24,9 @@ Code:
   }
 Expected Outcome:25
 
+Test:when user selects a veggie 2 is added to price
+Code:
+   if(pizzaVeg === "redOnion") {
+    this.price += 2
+Expected Outcome:2
+
