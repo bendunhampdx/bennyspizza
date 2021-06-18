@@ -5,7 +5,7 @@ function Order(size, veggies, meat, price) {
   this.price = 0;
 }
 
-let testPizza = new Order("medium")
+let testPizza = new Order("large")
 
 Order.prototype.orderSize = function() {
   let pizzaSize = this.size
@@ -13,6 +13,8 @@ Order.prototype.orderSize = function() {
     this.price += 15
   } else if (pizzaSize === "medium") {
     this.price += 20
+  } else if (pizzaSize === "large") {
+    this.price += 25
   }
   return this.price
 }
