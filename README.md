@@ -9,3 +9,10 @@ Code:
   return this.price
 }
 Expected Output:15
+
+Test:when user selects medium size pizza the price changes to 20
+Code:
+ } else if (pizzaSize === "medium") {
+    this.price += 20
+  }
+Expected Outcome:20
