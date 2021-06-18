@@ -8,8 +8,6 @@ function Order(size, veggies, meat) {
   this.price = 0;
 }
 
-let testPizza = new Order("large", "redOnion", "veganSausage")
-
 Order.prototype.orderSize = function() {
   let pizzaSize = this.size
   if(pizzaSize === "small") {
@@ -17,7 +15,7 @@ Order.prototype.orderSize = function() {
   } else if (pizzaSize === "medium") {
     this.price += 20
   } else if (pizzaSize === "large") {
-    this.price += 25
+    this.price += 30
   }
   return this.price
 }
@@ -41,9 +39,9 @@ Order.prototype.orderVeggies = function() {
 Order.prototype.orderMeat = function() {
   let pizzaMeat = this.meat
   if(pizzaMeat === "veganSausage") {
-    this.price += 3
+    this.price += 5
   } else if (pizzaMeat === "pepperoni") {
-    this.price += 3
+    this.price += 2
   } else if (pizzaMeat === "chicken") {
     this.price += 3
   } else if (pizzaMeat === "sausage") {
