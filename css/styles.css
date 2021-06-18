@@ -26,3 +26,21 @@ body {
 #tagline {
   text-align: center;
 }
+
+.container button {
+  margin-top: 5%;
+}
+
+.container #size {
+  margin-bottom: 2%;
+}
+.container #veggies {
+  margin-bottom: 2%;
+}
+.container #meat {
+  margin-bottom: 2%;
+}
+
+.container h3 {
+  text-emphasis: bold;;
+}
